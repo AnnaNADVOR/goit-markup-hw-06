@@ -286,7 +286,7 @@ img {
   padding-top: 0;
 }
 
-.section-title {
+.section-tittle {
   margin-bottom: 50px;
 
   color: var(--title-text-color);
@@ -596,8 +596,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-height: 528px;
-  min-width: 581px;
+  min-height: 581px;
+  min-width: 528px;
 
   background-color: var(--primary-bg-color);
   border-radius: var(--btn-border-radius);
@@ -637,6 +637,84 @@ img {
   fill: currentColor;
 }
 
+textarea {
+  resize: none;
+  height: 120px;
+  ;
+}
+
+.form {
+  padding: 40px;
+}
+
+.form .list {
+  margin-bottom: 20px;
+  
+}
+
+.form .tittle {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+margin-bottom: 10px;
+
+}
+.form-label {
+  margin-bottom: 4px;
+  
+  font-size: 12px;
+  line-height: calc(14/12);
+  letter-spacing: 0.01em;
+
+}
+
+.form-input {
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: var(--btn-border-radius);
+padding: 12px 16px;
+}
+
+.form-field textarea::placeholder {
+  font-size: 12px;
+  line-height: calc(14/12);
+  letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
+}
+
+  
+.form .button.primary {
+min-width: 200px;
+}
+
+.agree {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.agree input[type='checkbox'] {
+
+}
+
+.agree-label {
+  font-size: 14px;
+line-height: calc(24/14);
+margin-left: 8px;
+}
+
+.agree-link {
+  color: var(--accent-color);
+
+
+}
 /* PORTFOLIO */
 
 /* filter */

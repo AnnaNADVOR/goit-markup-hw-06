@@ -113,7 +113,7 @@
       <!--specialty-->
       <section class="section specialty no-padding">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
+          <h2 class="section-tittle">Чим ми займаємося</h2>
           <ul class="list specialty-list">
             <li class="item">
               <div class="specialty-card">
@@ -145,7 +145,7 @@
       <!--team-->
       <section class="section team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section-tittle">Наша команда</h2>
           <ul class="list team-list">
             <li class="card">
               <img src="images/team1.jpg" alt="Фото співробітника" width="270" height="250" />
@@ -542,6 +542,44 @@
         <button class="close-btn" type="button" data-modal-close>
           <svg class="close-svg"><use href="./images/icons.svg#icon-close"></use></svg>
         </button>
+        <form class="form">
+          <b class="tittle">Залиште свої дані, ми вам передзвонимо</b>
+          <ul class="list ">
+            <li class="form-field">
+              <label class="form-label" for="user-name">Ім'я</label>
+              <input class="form-input" type="text" name="user-name" id="user-name" />
+            </li>
+            <li class="form-field">
+              <label class="form-label" for="user-tel">Телефон</label>
+              <input class="form-input" type="tel" name="user-tel" id="user-tel" />
+            </li>
+            <li class="form-field">
+              <label class="form-label" for="user-mail">Пошта</label>
+              <input class="form-input" type="email" name="user-mail" id="user-mail" />
+            </li>
+            <li class="form-field">
+              <label class="form-label" for="comment">Коментар</label>
+              <textarea
+                class="form-input "
+                name="comment"
+                id="comment"
+                placeholder="Введіть текст"
+              ></textarea>
+            </li>
+          </ul>
+          <div class="agree">
+            <input class="form-input" type="checkbox" name="" value="agreement" id="agreement" />
+            <label class="agree-label" for="agreement"
+              >Погоджуюся з розсилкою та приймаю <a class="agree-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+              >Умови договору</a
+              ></label
+            >
+          </div>
+          <button class="button primary" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
