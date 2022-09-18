@@ -570,11 +570,12 @@ img {
 /* footer form */
 
 .footer-form {
- margin-left: 93px;
+  margin-left: 93px;
 }
 
 .footer-mail {
   padding: 15px 16px;
+  margin-right: 10px;
   width: 358px;
 
   background-color: inherit;
@@ -588,6 +589,12 @@ img {
 .fotter-mail::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
+}
+
+.footer-form .subscribe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-mail:focus {
