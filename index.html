@@ -544,23 +544,32 @@
         </button>
         <form class="form">
           <b class="tittle">Залиште свої дані, ми вам передзвонимо</b>
-          <ul class="list ">
+          <ul class="list">
             <li class="form-field">
               <label class="form-label" for="user-name">Ім'я</label>
-              <input class="form-input" type="text" name="user-name" id="user-name" />
+              <div class="input">
+                <input class="form-input" type="text" name="user-name" id="user-name" />
+                <svg class="form-icon"><use href="./images/icons.svg#icon-user"></use></svg>
+              </div>
             </li>
             <li class="form-field">
               <label class="form-label" for="user-tel">Телефон</label>
-              <input class="form-input" type="tel" name="user-tel" id="user-tel" />
+              <div class="input">
+                <input class="form-input" type="tel" name="user-tel" id="user-tel" />
+                <svg class="form-icon"><use href="./images/icons.svg#icon-phone"></use></svg>
+              </div>
             </li>
             <li class="form-field">
               <label class="form-label" for="user-mail">Пошта</label>
-              <input class="form-input" type="email" name="user-mail" id="user-mail" />
+              <div class="input">
+                <input class="form-input" type="email" name="user-mail" id="user-mail" />
+                <svg class="form-icon"><use href="./images/icons.svg#icon-email"></use></svg>
+              </div>
             </li>
             <li class="form-field">
               <label class="form-label" for="comment">Коментар</label>
               <textarea
-                class="form-input "
+                class="form-input"
                 name="comment"
                 id="comment"
                 placeholder="Введіть текст"
@@ -568,13 +577,11 @@
             </li>
           </ul>
           <div class="agree">
-            <input class="form-input" type="checkbox" name="" value="agreement" id="agreement" />
+            <input class="" type="checkbox" name="" value="agreement" id="agreement" />
             <label class="agree-label" for="agreement"
-              >Погоджуюся з розсилкою та приймаю <a class="agree-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-              >Умови договору</a
+              >Погоджуюся з розсилкою та приймаю
+              <a class="agree-link" href="" target="_blank" rel="noopener noreferrer"
+                >Умови договору</a
               ></label
             >
           </div>

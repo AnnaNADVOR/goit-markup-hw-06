@@ -640,7 +640,7 @@ img {
 textarea {
   resize: none;
   height: 120px;
-  ;
+  
 }
 
 .form {
@@ -662,9 +662,10 @@ textarea {
 }
 
 .form-field {
-  display: flex;
+  display:flex;
   flex-direction: column;
 margin-bottom: 10px;
+
 
 }
 .form-label {
@@ -679,7 +680,10 @@ margin-bottom: 10px;
 .form-input {
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: var(--btn-border-radius);
-padding: 12px 16px;
+padding: 12px 42px;
+width: 100%;
+
+
 }
 
 .form-field textarea::placeholder {
@@ -691,7 +695,10 @@ color: rgba(117, 117, 117, 0.5);
 
   
 .form .button.primary {
+  display: block;
 min-width: 200px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .agree {
@@ -708,13 +715,34 @@ min-width: 200px;
   font-size: 14px;
 line-height: calc(24/14);
 margin-left: 8px;
+
 }
 
 .agree-link {
   color: var(--accent-color);
+}
 
+.input {
+  position: relative;
 
 }
+
+.form-input:hover {
+border-color: #188ce8;
+fill: #188ce8;
+}
+
+.form-icon {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+    fill: black;
+}
+
+
 /* PORTFOLIO */
 
 /* filter */
