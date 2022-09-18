@@ -682,7 +682,7 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: var(--btn-border-radius);
 padding: 12px 42px;
 width: 100%;
-
+    outline: transparent;
 
 }
 
@@ -724,11 +724,12 @@ margin-left: 8px;
 
 .input {
   position: relative;
-
 }
-.form-input:hover, 
-.form-input:focus {
+
+.form-input:focus, .form-input:hover
+ {
   border-color: var(--accent-color);
+  
 }
 
 .form-input:hover + .form-icon, .form-input:focus +.form-icon {
@@ -736,8 +737,7 @@ fill:var(--accent-color);
 }
 
 .form-icon {
-  /* width: 18px;
-  height: 18px; */
+
     position: absolute;
   top: 50%;
   left: 15px;
