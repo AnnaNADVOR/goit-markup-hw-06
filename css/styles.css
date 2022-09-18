@@ -726,17 +726,18 @@ margin-left: 8px;
   position: relative;
 
 }
-.form-input:hover, .form-input:focus {
-  border-color: #188ce8;
+.form-input:hover, 
+.form-input:focus {
+  border-color: var(--accent-color);
 }
 
 .form-input:hover + .form-icon, .form-input:focus +.form-icon {
-fill: #188ce8;
+fill:var(--accent-color);
 }
 
 .form-icon {
-  width: 18px;
-  height: 18px;
+  /* width: 18px;
+  height: 18px; */
     position: absolute;
   top: 50%;
   left: 15px;
