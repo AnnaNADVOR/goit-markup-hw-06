@@ -627,7 +627,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-btn:hover {
+.close-btn:hover,
+.close-btn:focus {
   color: var(--accent-color);
 }
 
@@ -637,114 +638,164 @@ img {
   fill: currentColor;
 }
 
-textarea {
-  resize: none;
-  height: 120px;
-  
-}
-
 .form {
   padding: 40px;
-}
-
-.form .list {
-  margin-bottom: 20px;
-  
 }
 
 .form .tittle {
   display: block;
   margin-bottom: 12px;
   font-size: 20px;
-    line-height: calc(23/20);
-    text-align: center;
-    color: var(--title-text-color);
+  line-height: calc(23 / 20);
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.form .list {
+  margin-bottom: 20px;
 }
 
 .form-field {
-  display:flex;
+  display: flex;
   flex-direction: column;
-margin-bottom: 10px;
 
-
+  
 }
+
+.form-field:not(:last-child){
+ margin-bottom: 10px; 
+}
+
 .form-label {
   margin-bottom: 4px;
-  
-  font-size: 12px;
-  line-height: calc(14/12);
-  letter-spacing: 0.01em;
 
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
 }
 
 .form-input {
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: var(--btn-border-radius);
-padding: 12px 42px;
-width: 100%;
-    outline: transparent;
-
-}
-
-.form-field textarea::placeholder {
-  font-size: 12px;
-  line-height: calc(14/12);
-  letter-spacing: 0.01em;
-color: rgba(117, 117, 117, 0.5);
-}
-
-  
-.form .button.primary {
-  display: block;
-min-width: 200px;
-margin-left: auto;
-margin-right: auto;
-}
-
-.agree {
-  display: flex;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
-.agree input[type='checkbox'] {
-
-}
-
-.agree-label {
-  font-size: 14px;
-line-height: calc(24/14);
-margin-left: 8px;
-
-}
-
-.agree-link {
-  color: var(--accent-color);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: var(--btn-border-radius);
+  padding: 12px;
+  padding-left: 42px;
+  width: 100%;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input {
   position: relative;
 }
 
-.form-input:focus, .form-input:hover
- {
+/* .form-input:focus,
+.form-input:hover {
   border-color: var(--accent-color);
-  
 }
 
-.form-input:hover + .form-icon, .form-input:focus +.form-icon {
-fill:var(--accent-color);
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+} */
+
+.input:focus-within > .form-input,
+.input:hover > .form-input {
+  border-color: var(--accent-color);
+}
+
+.input:focus-within > .form-icon,
+.input:hover > .form-icon {
+  fill: var(--accent-color);
 }
 
 .form-icon {
-
-    position: absolute;
+  position: absolute;
   top: 50%;
   left: 15px;
   transform: translateY(-50%);
-    fill: black;
+  fill: black;
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input.textarea {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input.textarea:focus,
+.form-input.textarea:hover {
+  border-color: var(--accent-color);
+}
+
+.form-field textarea::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.icon-uncheked {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  margin-right: 8px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+}
+
+.icon-check {
+width: 16px;
+height: 15px;
+}
+
+.check {
+  opacity: 0;
+
+}
+
+.checkbox:checked +.icon-check .check {
+  opacity: 1;
+  background-color: #188ce8;
+}
+
+.uncheck {
+  opacity: 1;
+}
+
+.checkbox:checked+.icon-check .uncheck {
+  opacity: 0;
+  background-color: var(--accent-color);
+}
+
+.form .button.primary {
+  display: block;
+  min-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.agree input[type='checkbox'] {
+}
+
+.agree-label {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  display: flex;
+  align-items: center;
+  
+  margin-bottom: 30px;
+  background-color: tomato;
+}
+
+.agree-link {
+  color: var(--accent-color);
+}
 
 /* PORTFOLIO */
 
